@@ -7,6 +7,7 @@
 	<title>Calculator Data Usage YT</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
 </head>
 
 <style>
@@ -23,6 +24,15 @@ select {
 option {
 	padding: 3px 7px;
 }
+option:focus {
+	background-color: blueviolet;
+}
+input {
+	padding: 5px;
+}
+input:focus, select:focus {
+	outline-color: blueviolet;
+}
 #quality-video {
 	overflow-y: hidden;
 }
@@ -32,13 +42,22 @@ option {
 .b-12 {
 	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-	padding: 5px;
+	padding: 15px;
+	border-radius: 6px;
+}
+#mybox, #title {
+	margin: auto;
+	width: 400px;
 }
 #mybox {
-	margin: auto;
-	width: 350px;
+	margin-top: 50px;
 }
-
+#title {
+	margin-top: 100px;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: 'Julius Sans One', sans-serif;
+}
 #mybox input, #mybox select {
 	width: 100%;
 }
@@ -48,6 +67,10 @@ option {
 </style>
 
 <body>
+	<div id="title">
+		Calculator Data Usage YT
+	</div>
+
 	<div class="b-12" id="mybox">
 		<div class="form-group">
 			<div>
